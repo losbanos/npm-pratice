@@ -1,23 +1,29 @@
 {
   "name": "npm-pratice",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "echo \"Node start..\" && node ./dist/index.js",
-    "uuid": "echo \"UUID v4() => \" && uuid"
+    "uuid": "echo \"UUID v4() => \" && uuid",
+    "postinstall": "node postinstall.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "0": "^0.0.0",
+    "npm-pratice": "^1.0.2",
     "uuid": "^9.0.1"
   },
   "devDependencies": {
     "@types/node": "^20.10.6",
     "@types/uuid": "^9.0.7",
-    "esbuild": "^0.19.4"
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.3.1",
+    "esbuild": "^0.19.4",
+    "ts-node": "^10.9.2"
   }
 }
